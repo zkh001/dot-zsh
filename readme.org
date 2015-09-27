@@ -1,2 +1,8 @@
 * What's this?
   ZSH config files
+
+* You must do
+  
+at ".zsh.d"
+  - mv template.zshrc ~/.zshrc
+  - mv template.zshenv ~/.zshenv
