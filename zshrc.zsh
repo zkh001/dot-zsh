@@ -77,7 +77,7 @@ setopt brace_ccl           # ex : {a-d} -> a b c d
 
 # setopt auto_cd             # can change directory without 'cd' command
 
-chpwd_functions=($chpwd_functions dirs)
+chpwd_functions+=(dirs)
 
 # anyenv
 is_exist_cmd anyenv  && is_exist_cmd git && [[ ! -d $(anyenv root)/plugins ]] && {

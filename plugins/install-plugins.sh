@@ -11,3 +11,6 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
 # autosuggestions
 git clone git://github.com/tarruda/zsh-autosuggestions
+
+# zsh-completions (completion files)
+git clone git://github.com/zsh-users/zsh-completions.git ../completions/zsh-completions/

@@ -2,10 +2,6 @@
 ###   Prompt Setting   ###
 ##########################
 
-# NOTE:
-#    you MUST load this file after color config
-
-
 # # プロンプトの設定テーマを使う
 # # ちなみにテーマのプレビューは
 # # prompt -l して prompt -p テーマ名 でやる
@@ -58,6 +54,7 @@
 
 local verbose_prompt=0
 
+
 if [ $verbose_prompt = 0 ]; then
     # 通常
     PROMPT="%{$fg_bold[cyan]%}%n%#%{$reset_color%} "
@@ -69,6 +66,11 @@ else
     # 別バージョン(2行に渡っていろいろ表示するやつ)
     #     [ ... ]
     #     $ ■
+
+    # gitとか用
+    autoload -Uz vcs_info
+    setopt prompt_subst
+
     # 通常
     PROMPT="%{$fg_bold[cyan]%}<%n/%M :%T> [%~]
 %#%{$reset_color%} "

@@ -12,6 +12,10 @@ LISTMAX=9999
 ####  path   ####
 #################
 
+# fpath
+fpath+=(~/.zsh.d/completions(N-/) ~/.zsh.d/completions/zsh-completions/src(N-/))
+# fpath=(~/.zsh.d/completions/zsh-completions/src $fpath)
+
 ## 存在しないパスを登録しない
 #       N: NULL_GLOBオプションを設定。
 #          globがマッチしなかったり存在しないパスを無視する。
@@ -43,6 +47,8 @@ path=(
     # for ruby
     # /var/lib/gems/*/bin(N-/)
     #$HOME/.rbenv/bin(N-/)
+
+    /usr/local/texlive/*/bin/*/(N-/)
 
     )
 
